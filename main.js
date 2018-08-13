@@ -10,12 +10,16 @@ window.jquery.ajax=function(options){
         url=arguments[0]
         options=arguments[1]
     }
+    /*
     let method=options.method,
         body=options.body,
         succedFn=options.succedFn,
         failFn=options.failFn,
         headers=options.headers;
-    
+    */
+   
+    /* es6解构语法*/
+    let {method,body,succedFn,failFn,headers}=options
 
     let request=new XMLHttpRequest();//声明一个请求对象,XMLHttpRequest是浏览器给出的一个用来进行请求相关的接口
     
